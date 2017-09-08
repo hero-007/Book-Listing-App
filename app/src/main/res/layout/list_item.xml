@@ -8,18 +8,12 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     >
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.25"
-        android:id="@+id/book_image"
-        android:src="@mipmap/ic_launcher"
-        android:visibility="visible"/>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -28,31 +22,36 @@
             android:layout_weight="1.5"
             tools:text="Title Of the Book"
             android:textColor="#000000"
-            android:textSize="28sp"/>
+            android:textSize="25sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.75"
+            android:layout_weight="1"
             android:gravity="center_vertical"
             tools:text="Authors Of the Book"
             android:id="@+id/book_author"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.75"
-            android:gravity="center_vertical"
-            android:id="@+id/book_price"
-            tools:text="Price Of the Book"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:id="@+id/book_ratings"
-            android:layout_weight="1.25"
+            android:layout_weight="1"
             android:numStars="5"
-            android:stepSize="0.5"
-            android:rating="4.5" />
+            android:stepSize="1"
+            android:rating="2"
+            android:id="@+id/starRate"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:background="#F44336"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Read Description"
+            android:id="@+id/description"/>
 
     </LinearLayout>
 
